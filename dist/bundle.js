@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/header/header.sass":
-/*!********************************!*\
-  !*** ./src/header/header.sass ***!
-  \********************************/
+/***/ "./src/colors_&_types/colors_&_types.sass":
+/*!************************************************!*\
+  !*** ./src/colors_&_types/colors_&_types.sass ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/header/header.sass?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/colors_&_types/colors_&_types.sass?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header_header_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header/header.sass */ \"./src/header/header.sass\");\n\n\n//# sourceURL=webpack://toxin/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_colors_types_colors_types_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/colors_&_types/colors_&_types.sass */ \"./src/colors_&_types/colors_&_types.sass\");\n\n\n//# sourceURL=webpack://toxin/./src/index.js?");
 
 /***/ })
 

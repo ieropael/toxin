@@ -1,0 +1,88 @@
+$dark100: #1F2041
+$dark75: rgba(31, 32, 65, 0.75)
+$dark50: rgba(31, 32, 65, 0.5)
+$dark25: rgba(31, 32, 65, 0.25)
+$dark5: rgba(31, 32, 65, 0.05)
+$primary: #BC9CFF
+$secondary: #6FCF97
+    
+*
+    margin: 0
+    padding: 0
+    border: 0
+    box-sizing: border-box
+    font-family: Montserrat, sans-serif
+    font-weight: 400
+
+table
+    border-spacing: 0
+
+.logo_cl
+    position: absolute
+    top: 30px
+    left: 30px
+
+.colors-types
+    margin: 145px 158px 0 150px
+    display: flex
+    justify-content: space-between
+
+.color-cell
+    padding: 0 40px 20px 0
+
+.color
+    width: 70px
+    height: 70px
+    border-radius: 6px
+    &_dark100
+        background: $dark100
+    &_dark75
+        background: $dark75
+    &_dark50
+        background: $dark50
+    &_dark25
+        background: $dark25
+    &_dark5
+        background: $dark5
+    &_primary
+        background: $primary
+    &_secondary
+        background: $secondary
+        
+.color-description
+    color: $dark100
+    font-size: 19px
+    line-height: 28px
+    &__text
+        font-weight: 700
+    &__subtext
+        font-weight: 400
+
+.type-cell
+    vertical-align: baseline
+    padding: 0 0 50px 30px
+
+.type
+    &-title
+        color: $dark25
+        text-align: right
+    &-description
+        color: $dark100
+        font-weight: 700
+        &_h3
+            text-transform: uppercase
+        &_body
+            color: $dark75
+            font-weight: 400
+    &_h1
+        font-size: 24px
+        line-height: 29px
+    &_h2
+        font-size: 19px
+        line-height: 23px
+    &_h3
+        font-size: 12px
+        line-height: 15px
+    &_body
+        font-size: 14px
+        line-height: 24px

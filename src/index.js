@@ -1,1 +1,1 @@
-import './header/header.sass'
+import '../src/colors_&_types/colors_&_types.sass'
