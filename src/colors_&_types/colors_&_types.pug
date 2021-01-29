@@ -1,66 +1,40 @@
-img.logo_cl(src="../src/images/logo_cl.svg")
+img.logo-cl(src="../src/images/logo_cl.svg" alt="Logo")
 .colors-types
-    table.colors
-        tr
-            td.color-cell
-                .color.color_dark100
-            td.color-cell
-                span.color-description.color-description__text Dark Shade 100% <br>
-                span.color-description.color-description__subtext #1F2041
-        tr
-            td.color-cell
-                .color.color_dark75
-            td.color-cell
-                span.color-description.color-description__text Dark Shade 75% <br>
-                span.color-description.color-description__subtext #1F2041
-        tr
-            td.color-cell
-                .color.color_dark50
-            td.color-cell
-                span.color-description.color-description__text Dark Shade 50% <br>
-                span.color-description.color-description__subtext #1F2041
-        tr
-            td.color-cell
-                .color.color_dark25
-            td.color-cell
-                span.color-description.color-description__text Dark Shade 25% <br>
-                span.color-description.color-description__subtext #1F2041
-        tr
-            td.color-cell
-                .color.color_dark5
-            td.color-cell.color-description
-                span.color-description__text Dark Shade 5% <br>
-                span.color-description__subtext #1F2041
-        tr
-            td.color-cell
-                .color.color_primary
-            td.color-cell.color-description
-                span.color-description__text Purple <br>
-                span.color-description__subtext #BC9CFF
-        tr
-            td.color-cell
-                .color.color_secondary
-            td.color-cell.color-description
-                span.color-description__text Green <br>
-                span.color-description__subtext #6FCF97
-    table.types
-        tr
-            td.type-cell
-                h1.type-title.type_h1 H1
-            td.type-cell
-                h1.type-description.type_h1 This one is the sub-section or <br> widget title
-        tr
-            td.type-cell
-                h2.type-title.type_h2 H2
-            td.type-cell
-                h2.type-description.type_h2 Next one is the item title inside <br> widgets
-        tr
-            td.type-cell
-                h3.type-title.type_h3 H3
-            td.type-cell
-                h3.type-description.type-description_h3.type_h3 This is a label or CTA text
-        tr
-            td.type-cell
-                span.type-title.type_body Body
-            td.type-cell
-                span.type-description.type-description_body.type_body This is the body text which is used for most <br> of the design, like paragraphs, lists, etc.
+    .colors-grid
+        .colors.colors--dark100
+        .colors-text
+            span.colors-text__name Dark Shade 100% <br>
+            span.colors-text__hex #1F2041
+        .colors.colors--dark75
+        .colors-text
+            span.colors-text__name Dark Shade 75% <br>
+            span.colors-text__hex #1F2041
+        .colors.colors--dark50
+        .colors-text
+            span.colors-text__name Dark Shade 50% <br>
+            span.colors-text__hex #1F2041
+        .colors.colors--dark25
+        .colors-text
+            span.colors-text.colors-text__name Dark Shade 25% <br>
+            span.colors-text.colors-text__hex #1F2041
+        .colors.colors--dark5
+        .colors-text
+            span.colors-text__name Dark Shade 5% <br>
+            span.colors-text__hex #1F2041
+        .colors.colors--primary
+        .colors-text
+            span.colors-text__name Purple <br>
+            span.colors-text__hex #BC9CFF
+        .colors.colors--secondary
+        .colors-text
+            span.colors-text__name Green <br>
+            span.colors-text__hex #6FCF97
+    .types-grid
+        h1.type-h1.types-title H1
+        h1.type-h1 This one is the sub-section or <br> widget title
+        h2.type-h2.types-title H2
+        h2.type-h2 Next one is the item title inside <br> widgets
+        h3.type-h3.types-title H3
+        h3.type-h3 This is a label or CTA name
+        span.type-body.types-title Body
+        span.type-body This is the body name which is used for most <br> of the design, like paragraphs, lists, etc.
