@@ -16,14 +16,23 @@ const sass = {
         "sass-loader",
     ]
 };
+const fonts = {
+  test: /\.(woff|ttf|svg)$/,
+  use: [
+    {
+      loader: 'file-loader?name=fonts/[name].[ext]'
+    }
+  ]
+}
 const config = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: ''
   },
   module: {
-    rules: [pug, sass]
+    rules: [pug, sass, fonts]
   },
   plugins: [
     new HtmlWebpackPlugin({
