@@ -1,0 +1,386 @@
+@import /src/colors_&_types/colors_&_types.sass
+
+.form-elements-grid
+    width: 1160px
+    margin: 140px auto 130px auto
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    
+.form-wrapper
+    width: 320px
+    margin-bottom: 20px
+    &--md
+        width: 266px
+    &--margin
+        margin-bottom: 40px
+    &--flex
+        display: flex
+        gap: 20px
+
+.form-caption
+    display: flex
+    justify-content: space-between
+    margin-bottom: 5px
+    &--lg
+        margin-bottom: 16px
+    &__condition
+        color: $dark50
+        font-weight: 400
+
+.form-field
+    border: 1px solid $dark25
+    border-radius: 4px
+    width: 320px
+    &__input
+        width: 100%
+        padding: 13px 15px
+        border-radius: inherit
+        background-color: #ffffff
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &::placeholder
+            color: $dark25
+        &--hovered
+            &::placeholder
+                color: $dark75
+    &__button
+        border-radius: inherit
+        background-color: #ffffff
+        padding: 13px
+        cursor: pointer
+    &__dropdown
+        border-bottom-left-radius: 0
+        border-bottom-right-radius: 0
+        border-bottom: 1px solid $dark50
+        cursor: pointer
+        margin-bottom: 7px
+    &--hovered
+        border: 1px solid $dark50
+        &::placeholder
+            color: $dark75
+    &--expanded
+        border: 1px solid $dark50
+    &--subscription
+        display: flex
+        justify-content: space-between
+    &--sm
+        width: 150px
+    &--md
+        width: 266px
+
+.check
+    display: grid
+    gap: 10px
+    &__button
+        display: block
+        padding-left: 30px
+        cursor: pointer
+    &__input
+        position: absolute
+        appearance: none
+    &__box
+        display: inline-block
+        position: absolute
+        width: 20px
+        height: 20px
+        border: 1px solid rgba(31, 32, 65, 0.25)
+        border-radius: 4px
+        margin-left: -30px
+    &__input:checked + &__box
+        background-image: url("data:image/svg+xml,%3Csvg width='10' height='9' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.46439 2.40768L5.70703 6.65032L4.29282 8.06453L0.0501771 3.82189L1.46439 2.40768Z' fill='url(%23paint0_linear)'/%3E%3Cpath d='M8.53546 0.993466L9.94967 2.40768L4.29282 8.06453L2.8786 6.65032L8.53546 0.993466Z' fill='url(%23paint1_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='7.82835' y1='0.286359' x2='2.1715' y2='5.94321' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23BC9CFF'/%3E%3Cstop offset='1' stop-color='%238BA4F9'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='7.82835' y1='0.286359' x2='2.1715' y2='5.94321' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23BC9CFF'/%3E%3Cstop offset='1' stop-color='%238BA4F9'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+        border: 1px solid #BC9CFF
+        background-repeat: no-repeat
+        background-position: center center
+    &__title
+        display: block
+        margin-bottom: 5px
+        color: $dark75
+        font-size: 14px
+        font-weight: 700
+    &__text
+        color: $dark50
+        &--rich
+            display: block
+            color: $dark50
+            font-size: 12px
+            font-weight: 400
+    &__list
+        width: 266px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__title
+            padding: 14px 16px 15px 0
+
+.radio
+    &__button
+        padding-left: 30px
+        cursor: pointer
+    &__input
+        position: absolute
+        appearance: none
+    &__box
+        display: inline-block
+        position: absolute
+        width: 20px
+        height: 20px
+        border: 1px solid rgba(31, 32, 65, 0.25)
+        border-radius: 50%
+        margin-left: -30px
+    &__input:checked + &__box
+        border: 1px solid #BC9CFF
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='12' height='12' rx='6' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='6' y1='0' x2='6' y2='12' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23BC9CFF'/%3E%3Cstop offset='1' stop-color='%238BA4F9'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+        background-repeat: no-repeat
+        background-position: center center
+    &__option
+        margin-right: 20px
+
+.toggle
+    &__button
+        display: block
+        padding-left: 50px
+        cursor: pointer
+    &__input
+        position: absolute
+        appearance: none
+    &__box
+        display: inline-block
+        position: absolute
+        width: 40px
+        height: 20px
+        border: 1px solid rgba(31, 32, 65, 0.25)
+        border-radius: 10px
+        margin-left: -50px
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='0.557617' width='12' height='12' rx='6' fill='%231F2041' fill-opacity='0.25'/%3E%3C/svg%3E%0A")
+        background-repeat: no-repeat
+        background-position: left 3px center
+        transition: .4s
+    &__input:checked + &__box
+        border: 1px solid #BC9CFF
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='12' height='12' rx='6' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='6' y1='0' x2='6' y2='12' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23BC9CFF'/%3E%3Cstop offset='1' stop-color='%238BA4F9'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+        background-repeat: no-repeat
+        background-position: right 3px center
+        transition: .4s
+    &__option
+        margin-bottom: 14px
+
+.like
+    &-wrapper
+        display: flex
+        gap: 10px
+    &__button
+        padding-left: 40px
+        cursor: pointer
+    &__input
+        position: absolute
+        appearance: none
+    &__box
+        display: inline-block
+        position: absolute
+        width: 40px
+        height: 20px
+        border: 1px solid rgba(31, 32, 65, 0.25)
+        border-radius: 10px
+        margin-left: -40px
+        background-image: url("/src/images/favorite_border.svg")
+        background-repeat: no-repeat
+        background-position: left 5px center
+    &__counter
+        display: block
+        font-size: 10px
+        color: $dark25
+        text-align: center
+        margin-top: 3px
+        margin-left: 10px
+    &__input:checked + &__box
+        border: 1px solid $primary
+        background-image: url("/src/images/favorite.svg")
+    &__input:checked + &__box > &__counter
+        color: $primary
+
+.rating
+    &__star
+        position: absolute
+        top: 0
+        left: 0
+        height: 24px
+        appearance: none
+        margin: 0
+        background-repeat: repeat-x
+        background-size: 24px auto
+    &__star:focus
+        outline: none
+    &__star:checked, &__star:hover
+        background-image: url("/src/images/star.svg")
+    &__star:hover ~ &__star
+        background-image: url("/src/images/star_border.svg")
+    &__group
+        position: relative
+        width: 120px
+        height: 24px
+        background-image: url("/src/images/star_border.svg")
+        background-size: 24px auto
+        background-repeat: repeat-x
+    &__star:nth-of-type(1)
+        z-index: 5
+        width: 24px
+    &__star:nth-of-type(2)
+        z-index: 4
+        width: 48px
+    &__star:nth-of-type(3)
+        z-index: 3
+        width: 72px
+    &__star:nth-of-type(4)
+        z-index: 2
+        width: 96px
+    &__star:nth-of-type(5)
+        z-index: 1
+        width: 120px
+
+.range-slider
+    height: 6px
+    border: 1px solid rgba(31, 32, 65, 0.25)
+    border-radius: 3px
+    cursor: pointer
+    &__line
+        width: 88px 
+        height: 6px
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
+        border-radius: 3px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-left: 82px
+    &__circle
+        width: 14px
+        height: 14px
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
+        border: 2px solid #FFFFFF
+        border-radius: 10px
+
+.button
+    width: 99px
+    height: 44px
+    color: #FFF
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+    border-radius: 22px
+    cursor: pointer
+    &-wrapper
+        display: flex
+        gap: 20px
+        margin-bottom: 30px
+    &--light
+        position: relative
+        color: $primary
+        background: #FFF
+        background-clip: padding-box
+        border: solid 2px transparent
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            z-index: -1
+            margin: -2px
+            border-radius: inherit
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+        &--disabled
+            &::before
+                background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%)
+    &--disabled
+        background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%)
+    &--link
+        color: $primary
+        background: #FFF
+        cursor: pointer
+        &--disabled
+            color: $dark50
+    &--lg
+        width: 320px
+        position: relative
+    &--lg img
+        position: absolute
+        right: 20px
+    &--page
+        width: 40px
+        height: 40px
+        &--disabled
+            background: #fff
+            color: $dark50
+            font-weight: 400
+        &--arrow
+            background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
+
+.pagination
+    font-size: 0
+    width: 240px
+    &__text
+        font-size: 14px
+        text-align: center
+        margin-top: 10px
+
+.dropdown
+    &-item
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-left: 15px
+    &-counter
+        display: flex
+        align-items: center
+        margin: 0 7px 7px 0
+        &__button
+            background: #FFF
+            cursor: pointer
+            font-size: 0
+        &__result
+            width: 32px
+            font-size: 12px
+            text-align: center
+    &-buttons
+        display: flex
+        justify-content: space-between
+        padding: 13px 7px 13px 14px
+    &-accept
+        margin-left: auto
+        margin-right: 0
+
+.bullet-list
+    display: grid
+    gap: 10px
+    &__item
+        display: flex
+        align-items: baseline
+        gap: 10px
+    &__text
+        line-height: 24px
+
+.feature
+    display: flex
+    align-items: center
+    gap: 10px
+    &__comfort
+        padding: 4px
+    &__convenience
+        padding: 5px 6px
+    &__line
+        background: rgba(31, 32, 65, 0.1)
+        width: 280px
+        height: 1px
+        margin-top: 20px
+    
+.review-form
+    grid-column-start: 2
+    grid-column-end: 4
+    &__user
+        display: flex
+    &__user-info
+        margin-top: 12px
+    &__review
+        display: flex
+    &__like
+        margin: 0 24px
+        

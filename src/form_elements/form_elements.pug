@@ -1,0 +1,387 @@
+img(src="../src/images/logo_cl.svg" alt="Logo").logo-cl
+.form-elements-grid
+    .form-elements-cell
+        .form-wrapper
+            .from-box
+                .form-caption
+                    span.form-caption__title.type-h3 Text Field
+                    span.form-caption__condition.type-h3 Default
+                form.form-field
+                    input(type="email" placeholder="Email").form-field__input.type-body
+        .form-wrapper
+            .form-box
+                .form-caption
+                    span.form-caption__title.type-h3 Text Field
+                    span.form-caption__condition.type-h3 Hover / Focus
+                form.form-field.form-field--hovered
+                    input(type="text" placeholder="This is pretty awesome").form-field__input.form-field__input--hovered.type-body
+        .form-wrapper
+            .form-box
+                .form-caption
+                    span.form-caption__title.type-h3 Dropdown
+                form.form-field
+                    button(type="button").form-field__input.type-body
+                        span.dropdown-text Сколько гостей
+                        img(src="/src/images/dropdown_arrow_down.svg" alt="Dropdown").dropdown-arrow
+        .form-wrapper.form-wrapper--margin
+            .form-box
+                .form-caption
+                    span.form-caption__title.type-h3 Masked Text Field
+                form.form-field
+                    input(type="text" placeholder="ДД.ММ.ГГГГ").form-field__input.type-body
+        .form-wrapper.form-wrapper--margin.form-wrapper--flex
+            .form-box
+                .form-caption
+                    span.form-caption__title.type-h3 Date Dropdown
+                form.form-field.form-field--sm
+                    button(type="button").form-field__input.type-body
+                        span.dropdown-text ДД.ММ.ГГГГ
+                        img(src="/src/images/dropdown_arrow_down.svg" alt="Dropdown").dropdown-arrow
+            .form-box
+                .form-caption
+                    span.form-caption__title.type-h3 Date Dropdown
+                form.form-field.form-field--sm
+                    button(type="button").form-field__input.type-body
+                        span.dropdown-text 19.08.2019
+                        img(src="/src/images/dropdown_arrow_down.svg" alt="Dropdown").dropdown-arrow
+        .form-wrapper.form-wrapper--margin
+            .form-box
+                .form-caption
+                    span.form-caption__title.type-h3 Filter Date Dropdown
+                form.form-field.form-field--md
+                    button(type="button").form-field__input.type-body
+                        span.dropdown-text 19 авг - 23 авг
+                        img(src="/src/images/dropdown_arrow_down.svg" alt="Dropdown").dropdown-arrow
+        .form-wrapper.form-wrapper--margin
+            .form-box
+                .form-caption
+                    span.form-caption__title.type-h3 Subscription Text Field
+                form.form-field.form-field--subscription.form-field--md.type-body
+                    input(type="text" placeholder="Email").form-field__input
+                    button(type="button").form-field__button
+                        img(src="../src/images/arrow_forward.svg" alt="Accept").arrow-forward
+    .form-elements-cell
+        .form-wrapper.form-wrapper--margin
+            .form-box
+                .form-caption.form-caption--lg
+                    span.form-caption__title.type-h3 Checkbox Buttons
+                form.check
+                    label.check__button.check__option
+                        input(type="checkbox").check__input
+                        .check__box
+                        span.check__text.type-body Можно курить
+                    label.check__button.check__option
+                        input(type="checkbox" checked).check__input
+                        .check__box
+                        span.check__text.type-body Можно с питомцами
+                    label.check__button
+                        input(type="checkbox" checked).check__input
+                        .check__box
+                        span.check__text.type-body Можно пригласить гостей<br>(до 10 человек)
+        .form-wrapper.form-wrapper--margin
+            .form-box
+                .form-caption.form-caption--lg
+                    span.form-caption__title.type-h3 Radio Buttons
+                form.radio
+                    label.radio__button.radio__option
+                        input(type="radio" name="gender" checked).radio__input
+                        .radio__box
+                        span.type-body Мужчина
+                    label.radio__button.radio__option
+                        input(type="radio" name="gender").radio__input
+                        .radio__box
+                        span.check__text.type-body Женщина
+        .form-wrapper.form-wrapper--margin
+            .form-box
+                .form-caption.form-caption--lg
+                    span.form-caption__title.type-h3 Toggle
+                form.toggle
+                    label.toggle__button.toggle__option
+                        input(type="checkbox" checked).toggle__input
+                        .toggle__box
+                        span.type-body Получать спецпредложения
+                form.toggle
+                    label.toggle__button
+                        input(type="checkbox").toggle__input
+                        .toggle__box
+                        span.type-body Получать спецпредложения
+        .form-wrapper.form-wrapper--margin
+            .form-caption.form-caption--lg
+                span.form-caption__title.type-h3 Like Button
+            .like-wrapper
+                .form-box
+                    form.like
+                        label.like__button
+                            input(type="checkbox").like__input
+                            .like__box
+                                span.like__counter 2
+                .form-box
+                    form.like
+                        label.like__button
+                            input(type="checkbox" checked).like__input
+                            .like__box
+                                span.like__counter 12
+        .form-wrapper
+            .form-caption.form-caption--lg
+                span.form-caption__title.type-h3 Rate Button
+            .form-wrapper--flex
+                .form-box
+                    .rating__group
+                        input(type="radio" name="rating-4" value="1" aria-label="Ужасно").rating__star
+                        input(type="radio" name="rating-4" value="2" aria-label="Сносно").rating__star
+                        input(type="radio" name="rating-4" value="3" aria-label="Нормально").rating__star
+                        input(type="radio" name="rating-4" value="4" aria-label="Хорошо" checked).rating__star
+                        input(type="radio" name="rating-4" value="5" aria-label="Отлично").rating__star
+                .form-box
+                    .rating__group
+                        input(type="radio" name="rating-5" value="1" aria-label="Ужасно").rating__star
+                        input(type="radio" name="rating-5" value="2" aria-label="Сносно").rating__star
+                        input(type="radio" name="rating-5" value="3" aria-label="Нормально").rating__star
+                        input(type="radio" name="rating-5" value="4" aria-label="Хорошо").rating__star
+                        input(type="radio" name="rating-5" value="5" aria-label="Отлично" checked).rating__star
+    .form-elements-cell
+        .form-wrapper.form-wrapper--md.form-wrapper--margin
+            .form-caption.form-caption--lg
+                span.form-caption__title.type-h3 Range Slider
+                span.form-caption__condition.type-h3 5 000₽ - 10 000₽
+            form.range-slider.form-field--md
+                .range-slider__line
+                    .range-slider__circle
+                    .range-slider__circle
+        .form-wrapper.form-wrapper--margin
+            .form-caption.form-caption--lg
+                span.form-caption__title.type-h3 Buttons
+            .button-wrapper
+                button(type="button").button.type-h3 Click Me
+                button(type="button").button.button--disabled.type-h3 Click Me
+            .button-wrapper
+                button(type="button").button.button--light.type-h3 Click me
+                button(type="button").button.button--light.button--light--disabled.type-h3 Click Me
+            .button-wrapper
+                button(type="button").button--link.type-h3 Click me
+                button(type="button").button--link.button--link--disabled.type-h3 Click me
+            .button-wrapper
+                button(type="button").button.button--lg.type-h3 Click Me
+                    img(src="../src/images/arrow_forward_white.svg" alt="Accept")
+        .form-wrapper.form-wrapper--lg
+            .form-caption.form-caption--lg
+                span.form-caption__title.form-caption__title--lg.type-h3 Pagination
+            .pagination
+                button.button.button--page.type-h3 1
+                button.button.button--page.button--page--disabled.type-h3 2
+                button.button.button--page.button--page--disabled.type-h3 3
+                button.button.button--page.button--page--disabled.type-h3 ...
+                button.button.button--page.button--page--disabled.type-h3 15
+                button.button.button--page.button--page--arrow.type-h3
+                    img(src="../src/images/arrow_forward_white.svg" alt="Accept")
+                p.pagination__text.type-body 1 – 12 из 100+ вариантов аренды
+    .form-elements-cell
+        .form-wrapper
+            .form-box.form-field--md
+                .form-caption
+                    span.form-caption__title.type-h3 Dropdown
+                    span.form-caption__condition.type-h3 Default
+                form.form-field.form-field--md
+                    button(type="button").form-field__input.type-body
+                        span.dropdown-text 2 спальни, 2 кровати...
+                        img(src="/src/images/dropdown_arrow_down.svg" alt="Dropdown").dropdown-arrow
+        .form-wrapper.form-wrapper--margin
+            .form-box.form-field--md
+                .form-caption
+                    span.form-caption__title.type-h3 Dropdown
+                    span.form-caption__condition.type-h3 Expanded
+                form.form-field.form-field--md.form-field--expanded
+                    button(type="button").form-field__input.form-field__dropdown.type-body
+                        span.dropdown-text 2 спальни, 2 кровати...
+                        img(src="/src/images/dropdown_arrow_down.svg" alt="Dropdown").dropdown-arrow
+                    .dropdown-item
+                        span.type-h3 Спальни
+                        .dropdown-counter
+                            button(type="button").dropdown-counter__button
+                                img(src="/src/images/minus.svg" alt="Minus")
+                            .dropdown-counter__result.type-h3 2
+                            button(type="button").dropdown-counter__button
+                                img(src="/src/images/plus.svg" alt="Plus")
+                    .dropdown-item
+                        span.type-h3 Кровати
+                        .dropdown-counter
+                            button(type="button").dropdown-counter__button
+                                img(src="/src/images/minus.svg" alt="Minus")
+                            .dropdown-counter__result.type-h3 2
+                            button(type="button").dropdown-counter__button
+                                img(src="/src/images/plus.svg" alt="Plus")
+                    .dropdown-item
+                        span.type-h3 Ванные Комнаты
+                        .dropdown-counter
+                            button(type="button").dropdown-counter__button
+                                img(src="/src/images/minus_disabled.svg" alt="Minus")
+                            .dropdown-counter__result.type-h3 0
+                            button(type="button").dropdown-counter__button
+                                img(src="/src/images/plus.svg" alt="Plus")
+    .form-elements-cell
+        .form-wrapper
+            .form-box.form-field--md
+                .form-caption
+                    span.form-caption__title.type-h3 Dropdown
+                form.form-field.form-field--expanded
+                    button(type="button").form-field__input.form-field__dropdown.type-body
+                        span.dropdown-text Сколько гостей
+                        img.dropdown-arrow(src="/src/images/dropdown_arrow_down.svg" alt="Dropdown")
+                    .dropdown-item
+                        span.type-h3 Взрослые
+                        .dropdown-counter
+                            button(type="button").dropdown-counter__button
+                                img(src="/src/images/minus_disabled.svg" alt="Minus")
+                            .dropdown-counter__result.type-h3 0
+                            button(type="button").dropdown-counter__button
+                                img(src="/src/images/plus.svg" alt="Plus")
+                    .dropdown-item
+                        span.type-h3 Дети
+                        .dropdown-counter
+                            button(type="button").dropdown-counter__button
+                                img(src="/src/images/minus_disabled.svg" alt="Minus")
+                            .dropdown-counter__result.type-h3 0
+                            button(type="button").dropdown-counter__button
+                                img(src="/src/images/plus.svg" alt="Plus")
+                    .dropdown-item
+                        span.type-h3 Младенцы
+                        .dropdown-counter
+                            button(type="button").dropdown-counter__button
+                                img(src="/src/images/minus_disabled.svg" alt="Minus")
+                            .dropdown-counter__result.type-h3 0
+                            button(type="button").dropdown-counter__button
+                                img(src="/src/images/plus.svg" alt="Plus")
+                    .dropdown-buttons
+                        button(type="button").button--link.dropdown-accept.type-h3 Применить
+    .form-elements-cell
+        .form-wrapper
+            .form-box.form-field--md
+                .form-caption
+                    span.form-caption__title.type-h3 Dropdown
+                form.form-field.form-field--expanded
+                    button(type="button").form-field__input.form-field__dropdown.type-body
+                        span.dropdown-text.type-body Сколько гостей
+                        img(src="/src/images/dropdown_arrow_down.svg" alt="Dropdown").dropdown-arrow
+                    .dropdown-item
+                        span.type-h3 Взрослые
+                        .dropdown-counter
+                            button(type="button").dropdown-counter__button
+                                img(src="/src/images/minus.svg" alt="Minus")
+                            .dropdown-counter__result.type-h3 2
+                            button(type="button").dropdown-counter__button
+                                img(src="/src/images/plus.svg" alt="Plus")
+                    .dropdown-item
+                        span.type-h3 Дети
+                        .dropdown-counter
+                            button(type="button").dropdown-counter__button
+                                img(src="/src/images/minus.svg" alt="Minus")
+                            .dropdown-counter__result.type-h3 1
+                            button(type="button").dropdown-counter__button
+                                img(src="/src/images/plus.svg" alt="Plus")
+                    .dropdown-item
+                        span.type-h3 Младенцы
+                        .dropdown-counter
+                            button(type="button").dropdown-counter__button
+                                img(src="/src/images/minus_disabled.svg" alt="Minus")
+                            .dropdown-counter__result.type-h3 0
+                            button(type="button").dropdown-counter__button
+                                img(src="/src/images/plus.svg" alt="Plus")
+                    .dropdown-buttons
+                        button(type="button").button--link.type-h3 Применить
+                        button(type="button").button--link.type-h3 Очистить
+    .form-elements-cell
+        .form-wrapper.form-wrapper--md.form-wrapper--margin
+            .form-box
+                .check__list.check__list__title
+                    span.type-h3 Expandable Checkbox List
+                    img(src="/src/images/dropdown_arrow_down.svg" alt="Dropdown").dropdown-arrow
+        .form-wrapper.form-wrapper--md.form-wrapper--margin
+            .form-box
+                .check__list.check__list__title
+                    span.type-h3 Expandable Checkbox List
+                    img(src="/src/images/dropdown_arrow_up.svg" alt="Dropdown").dropdown-arrow
+                form.check
+                    label.check__button
+                        input(type="checkbox").check__input
+                        .check__box
+                        span.check__text.type-body Завтрак
+                    label.check__button
+                        input(type="checkbox" checked).check__input
+                        .check__box
+                        span.check__text.type-body Письменный стол
+                    label.check__button
+                        input(type="checkbox" checked).check__input
+                        .check__box
+                        span.check__text.type-body Стул для кормления
+                    label.check__button
+                        input(type="checkbox" checked).check__input
+                        .check__box
+                        span.check__text.type-body Кроватка
+                    label.check__button
+                        input(type="checkbox").check__input
+                        .check__box
+                        span.check__text.type-body Телевизор
+                    label.check__button
+                        input(type="checkbox").check__input
+                        .check__box
+                        span.check__text.type-body Шампунь
+    .form-elements-cell
+        .form-wrapper
+            .form-caption.form-caption--lg
+                span.type-h3 Rich Checkbox Buttons
+            .check__list
+                form.check
+                    label.check__button
+                        input(type="checkbox").check__input
+                        .check__box
+                        span.check__title Широкий коридор
+                        span.check__text--rich Ширина коридоров в номере<br>не менее 91 см.
+                    label.check__button
+                        input(type="checkbox").check__input
+                        .check__box
+                        span.check__title Помощник для инвалидов
+                        span.check__text--rich На 1 этаже вас встретит специалист<br>и проводит до номера.
+    .form-elements-cell
+        .form-caption.form-caption--lg
+            span.form-caption__title.type-h3 Bullet List
+        .bullet-list
+            .bullet-list__item
+                img(src="/src/images/ellipse.svg" alt="Item").dropdown-arrow
+                span.bullet-list__text.type-body Нельзя с питомцами
+            .bullet-list__item
+                img(src="/src/images/ellipse.svg" alt="Item").dropdown-arrow
+                span.bullet-list__text.type-body Без вечеринок и мероприятий
+            .bullet-list__item
+                img(src="/src/images/ellipse.svg" alt="Item").dropdown-arrow
+                span.bullet-list__text.type-body Время прибытия — после 13:00,<br>а выезд до 12:00
+    .form-elements-cell
+        .form-wrapper
+            .feature
+                img(src="/src/images/insert_emoticon.png" alt="Комфорт").feature__comfort
+                .feature__text
+                    span.check__title Комфорт
+                    span.type-body Шумопоглощающие стены
+            hr.feature__line
+        .form-wrapper
+            .feature
+                img(src="/src/images/location_city.png" alt="Удобство").feature__convenience
+                .feature__text
+                    span.check__title Удобство
+                    span.type-body Окно в каждой из спален
+            hr.feature__line
+    .review-form
+        .review-form__user
+            img(src="/src/images/image.jpg" alt="Аватар").review-form__image
+            .review-form__user-info
+                span.check__title Мурад Сарафанов
+                span.type-body 5 дней назад
+        .review-form__review
+            .review-form__like
+                form.like
+                    label.like__button
+                        input(type="checkbox" checked).like__input
+                        .like__box
+                            span.like__counter 12
+            .review-form__text
+                span.bullet-list__text.type-body Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+                
