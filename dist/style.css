@@ -344,7 +344,7 @@
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 10px;
   margin-left: -40px;
-  background-image: url(fonts/favorite_border.svg);
+  background-image: url(images/favorite_border.svg);
   background-repeat: no-repeat;
   background-position: left 5px center;
 }
@@ -358,7 +358,7 @@
 }
 .like__input:checked + .like__box {
   border: 1px solid #BC9CFF;
-  background-image: url(fonts/favorite.svg);
+  background-image: url(images/favorite.svg);
 }
 .like__input:checked + .like__box > .like__counter {
   color: #BC9CFF;
@@ -378,16 +378,16 @@
   outline: none;
 }
 .rating__star:checked, .rating__star:hover {
-  background-image: url(fonts/star.svg);
+  background-image: url(images/star.svg);
 }
 .rating__star:hover ~ .rating__star {
-  background-image: url(fonts/star_border.svg);
+  background-image: url(images/star_border.svg);
 }
 .rating__group {
   position: relative;
   width: 120px;
   height: 24px;
-  background-image: url(fonts/star_border.svg);
+  background-image: url(images/star_border.svg);
   background-size: 24px auto;
   background-repeat: repeat-x;
 }
