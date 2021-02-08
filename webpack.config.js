@@ -18,12 +18,26 @@ const sass = {
 };
 const fonts = {
   test: /\.(woff|ttf|svg)$/,
+  include: [
+    path.resolve(__dirname, 'src/fonts')
+  ],
   use: [
     {
       loader: 'file-loader?name=fonts/[name].[ext]'
     }
   ]
-}
+};
+const images = {
+  test: /\.(jpe?g|png|gif|svg)$/,
+  exclude: [
+    path.resolve(__dirname, 'src/fonts')
+  ],
+  use: [
+    {
+      loader: "file-loader?name=images/[name].[ext]"
+    }
+  ]
+};
 const config = {
   entry: './src/index.js',
   output: {
@@ -32,7 +46,7 @@ const config = {
     publicPath: ''
   },
   module: {
-    rules: [pug, sass, fonts]
+    rules: [pug, sass, fonts, images]
   },
   plugins: [
     new HtmlWebpackPlugin({
